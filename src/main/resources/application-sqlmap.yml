@@ -1,0 +1,6 @@
+sqlmap:
+  queries:
+    - key: selectUser
+      value: SELECT * FROM users WHERE id = ?
+    - key: insertUser
+      value: INSERT INTO users (id, name) VALUES (?, ?)

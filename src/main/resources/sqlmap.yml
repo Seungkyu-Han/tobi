@@ -1,0 +1,13 @@
+queries:
+  - key: userAdd
+    value: INSERT INTO users(id, name, password, email, level, login, recommend) values(?, ?, ?, ?, ?, ?, ?)
+  - key: userGet
+    value: SELECT * FROM users WHERE Id = ?
+  - key: userGetAll
+    value: SELECT * FROM users ORDER BY ID
+  - key: userDeleteAll
+    value: DELETE FROM users
+  - key: userGetCount
+    value: SELECT COUNT(*) FROM users
+  - key: userUpdate
+    value: UPDATE users SET name = ?, password = ?, email = ?, level = ?, login = ?, recommend = ? where id = ?
